@@ -7,4 +7,4 @@ Django のお勉強用に作ったものです。
 ## 学習環境
 
 * OS: Windows 10 (64bit)
-* Python: Python 3.5.2 + Django 1.10.4
+* Python: Python 3.5.2 + Django 1.10.5
