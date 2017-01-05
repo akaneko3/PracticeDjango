@@ -4,4 +4,4 @@ from django.shortcuts import render, render_to_response
 def index(request):
     page_title = 'Hello page'
     my_name = 'Jun'
-    return render_to_response('hello/hello.html', locals())
+    return render_to_response('hello/hello.djhtml', locals())
