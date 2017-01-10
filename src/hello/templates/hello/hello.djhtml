@@ -3,5 +3,5 @@
 {% block contents %}
 <h1>{{ page_title }}</h1>
 <p>現在の日時: {% now 'DATETIME_FORMAT' %}</p>
-<p>Hello, {{ my_name }}!</p>
+<p>Hello, {{ my_name | title}}!</p>
 {% endblock %}
