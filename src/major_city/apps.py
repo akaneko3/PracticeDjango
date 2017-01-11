@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class MajorcityConfig(AppConfig):
-    name = 'majorcity'
+    name = 'major_city'

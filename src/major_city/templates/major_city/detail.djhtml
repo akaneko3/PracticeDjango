@@ -4,7 +4,7 @@
   <caption>{{ city.name }}のデータ</caption>
   <tr>
     <th>指定日</th>
-    <td>{{ city.designated }}</td>
+    <td>{{ city.designated | date:'Y 年 n 月 j 日' }}</td>
   </tr>
   <tr>
     <th>地方</th>
