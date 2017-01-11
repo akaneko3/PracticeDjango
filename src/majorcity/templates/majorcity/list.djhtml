@@ -17,7 +17,7 @@
       <td class="pref">{{ city.prefecture.name }}</td>
       <td class="name">{{ city.name }}</td>
       <td class="button">
-        <form method="get" action="/cities/{{ city.id }}">
+        <form method="get" action="{{ city.id }}">
           <input type="submit" value="詳細">
         </form>
       </td>
