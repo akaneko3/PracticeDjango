@@ -1,0 +1,27 @@
+{% extends './base.djhtml' %}
+{% block contents %}
+<table>
+  <caption>{{ city.name }}のデータ</caption>
+  <tr>
+    <th>指定日</th>
+    <td>{{ city.designated }}</td>
+  </tr>
+  <tr>
+    <th>地方</th>
+    <td>{{ city.prefecture.district.name }}</td>
+  </tr>
+  <tr>
+    <th>都道府県</th>
+    <td>{{ city.prefecture.name }}</td>
+  </tr>
+  <tr>
+    <th>面積</th>
+    <td>{{ city.area }}km&sup2;</td>
+  </tr>
+  <tr>
+    <th>人口</th>
+    <td>{{ city.population }}人</td>
+  </tr>
+</table>
+<p><a href="/cities">一覧に戻る</a></p>
+{% endblock %}
