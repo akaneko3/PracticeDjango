@@ -3,3 +3,4 @@
 .pydevproject
 db.sqlite3
 src/**/__pycache__/
+.sass-cache/
