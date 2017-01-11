@@ -1,0 +1,23 @@
+@import url(common.css);
+caption {
+  color: slateblue;
+}
+
+th {
+  background-color: slateblue;
+  color: lavender;
+  font-size: 14pt;
+  text-align: left;
+}
+
+td {
+  background-color: lavender;
+  color: slateblue;
+  font-size: 14pt;
+  text-align: left;
+  width: 180px;
+}
+
+p {
+  text-align: center;
+}
