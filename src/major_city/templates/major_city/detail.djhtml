@@ -23,5 +23,5 @@
     <td>{{ city.population }}人</td>
   </tr>
 </table>
-<p><a href="../cities">一覧に戻る</a></p>
+<p><a href=".">一覧に戻る</a></p>
 {% endblock %}
