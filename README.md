@@ -8,4 +8,4 @@ Django のお勉強用に作ったものです。
 
 * OS: Windows 10 (64bit)
 * Python: Python 3.6.0 + Django 1.10.5 + psycopg2 2.6.2(PostgreSQL 接続用)
-* 等号開発環境: Eclipse Neon + PyDev
+* 統合開発環境: Eclipse Neon + PyDev
