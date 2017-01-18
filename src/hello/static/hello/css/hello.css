@@ -6,3 +6,7 @@ body {
 p {
     font-size: large;
 }
+
+label {
+    font-weight: bold;
+}
