@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ page_title | title }}</title>
+  </head>
+  <body>
+    <h1>{{ page_title | title }}</h1>
+    <form action="." method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <p><input type="submit" value="送信"></p>
+    </form>
+  </body>
+</html>

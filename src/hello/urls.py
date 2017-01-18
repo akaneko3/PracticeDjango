@@ -8,6 +8,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.hello),
-    url(r'^(?P<my_name>\w+)$', views.hello),
+    url(r'^$', views.get_name),
+    url(r'^thanks/$', views.hello),
 ]
