@@ -1,13 +1,6 @@
-{% load static %}
-<!doctype html>
-<html>
-  <head>
-    <title>{{ page_title | title }}</title>
-    <link rel="stylesheet" href="{% static 'hello/css/hello.css' %}">
-  </head>
-  <body>
-    <h1>{{ page_title | title }}</h1>
-    <p>現在の日時: {% now 'DATETIME_FORMAT' %}</p>
-    <p>Hello, {{ my_name | title}}!</p>
-  </body>
-</html>
+{% extends './common.djhtml' %}
+{% block content %}
+<h1>{{ page_title | title }}</h1>
+<p>現在の日時: {% now 'DATETIME_FORMAT' %}</p>
+<p>Hello, {{ my_name | title}}!</p>
+{% endblock %}

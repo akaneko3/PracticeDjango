@@ -1,0 +1,11 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <title>{{ page_title | title }}</title>
+    <link rel="stylesheet" href="{% static 'hello/css/hello.css' %}">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
