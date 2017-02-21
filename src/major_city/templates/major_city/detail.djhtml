@@ -1,27 +1,34 @@
-{% extends './base.djhtml' %}
-{% block contents %}
-<table>
-  <caption>{{ city.name }}のデータ</caption>
-  <tr>
-    <th>指定日</th>
-    <td>{{ city.designated | date:'Y 年 n 月 j 日' }}</td>
-  </tr>
-  <tr>
-    <th>地方</th>
-    <td>{{ city.prefecture.district.name }}</td>
-  </tr>
-  <tr>
-    <th>都道府県</th>
-    <td>{{ city.prefecture.name }}</td>
-  </tr>
-  <tr>
-    <th>面積</th>
-    <td>{{ city.area }}km&sup2;</td>
-  </tr>
-  <tr>
-    <th>人口</th>
-    <td>{{ city.population }}人</td>
-  </tr>
-</table>
-<p><a href=".">一覧に戻る</a></p>
-{% endblock %}
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <title>{{ city.name }}の詳細</title>
+    <link rel="stylesheet" href="{% static 'major_city/css/detail.css' %}">
+  </head>
+  <body>
+    <table>
+      <caption>{{ city.name }}のデータ</caption>
+      <tr>
+        <th>指定日</th>
+        <td>{{ city.designated | date:'Y 年 n 月 j 日' }}</td>
+      </tr>
+      <tr>
+        <th>地方</th>
+        <td>{{ city.prefecture.district.name }}</td>
+      </tr>
+      <tr>
+        <th>都道府県</th>
+        <td>{{ city.prefecture.name }}</td>
+      </tr>
+      <tr>
+        <th>面積</th>
+        <td>{{ city.area }}km&sup2;</td>
+      </tr>
+      <tr>
+        <th>人口</th>
+        <td>{{ city.population }}人</td>
+      </tr>
+    </table>
+    <p><a href="{% url 'major_city:index' %}">一覧に戻る</a></p>
+  </body>
+</html>
